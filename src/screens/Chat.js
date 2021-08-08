@@ -64,7 +64,7 @@ function ChatRoom() {
   const dummy = useRef();
 
   const messageRef = db.collection("messages");
-  const query = messageRef.orderBy("createdAt").limit(25);
+  const query = messageRef.orderBy("createdAt");
   const [messages] = useCollectionData(query, { idField: "id" });
 
   const [formValue, setformValue] = useState("");
