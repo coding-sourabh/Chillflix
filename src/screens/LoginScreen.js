@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignUpScreen from "./SignUpScreen";
-import logo from "../ChillFlix_logo.png";
+import logo from "../assets/ChillFlix_logo.png";
+
 
 function LoginScreen() {
   const [sighIn, setSighIn] = useState(false);

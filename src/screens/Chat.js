@@ -6,7 +6,8 @@ import { selectUser } from "../features/userSlice";
 import db, { auth } from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import firebase from "firebase";
-import avatar from './avatar.jpg';
+import avatar from '../assets/avatar.jpg';
+
 
 function Chat() {
   const [purl, setpurl] = useState("");

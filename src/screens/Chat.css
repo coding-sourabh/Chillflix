@@ -30,7 +30,7 @@
 }
 
 .mainContent {
-  background-image: url("./chatBack.jpg");
+  background-image: url("../assets/chatBack.jpg");
   background-size: contain;
   padding: 10px;
   height: 80vh;

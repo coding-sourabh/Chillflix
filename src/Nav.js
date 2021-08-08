@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import { useHistory } from "react-router-dom";
-import logo from "../src/ChillFlix_logo.png";
-import chatLogo from "../src/mssglogo.jpg";
-
+import logo from "./assets/ChillFlix_logo.png";
+import chatLogo from "./assets/mssglogo.jpg";
 function Nav() {
   const [show, handleShow] = useState(true);
   const history = useHistory();
