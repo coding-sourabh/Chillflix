@@ -6,8 +6,7 @@ import { selectUser } from "../features/userSlice";
 import db, { auth } from "../firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import firebase from "firebase";
-import avatar from '../assets/avatar.jpg';
-
+import avatar from "../assets/avatar.jpg";
 
 function Chat() {
   const [purl, setpurl] = useState("");
@@ -24,9 +23,13 @@ function Chat() {
     <div className="Chat">
       <div className="topContainer" style={{ backgroundColor: "#e50914" }}>
         <div className="chatHeaderContainer">
-        <img src = "http://www.pngmart.com/files/7/Live-Chat-PNG-Picture.png" style = {{height : "60px" , width : "130px"}}/>
-          <img  className = "headImg"
-            src={purl}
+          <img
+            src="http://www.pngmart.com/files/7/Live-Chat-PNG-Picture.png"
+            style={{ height: "60px", width: "130px" }}
+          />
+          <img
+            className="headImg"
+            src={purl ? purl : avatar}
             style={{
               height: "50px",
               width: "50px",
