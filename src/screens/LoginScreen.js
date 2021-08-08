@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./LoginScreen.css";
 import SignUpScreen from "./SignUpScreen";
-import logo from '../netflix_header_logo.png';
-
+import logo from "../ChillFlix_logo.png";
 
 function LoginScreen() {
   const [sighIn, setSighIn] = useState(false);
@@ -10,11 +9,7 @@ function LoginScreen() {
   return (
     <div className="loginScreen">
       <div className="loginScreen__Background">
-        <img
-          className="loginScreen__logo"
-          src={logo}
-          alt=""
-        />
+        <img className="loginScreen__logo" src={logo} alt="" />
 
         <button
           onClick={() => {

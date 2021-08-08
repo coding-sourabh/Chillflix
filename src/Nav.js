@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
 import { useHistory } from "react-router-dom";
-import logo from '../src/netflix_header_logo.png';
+import logo from "../src/ChillFlix_logo.png";
+import chatLogo from "../src/mssglogo.jpg";
 
 function Nav() {
   const [show, handleShow] = useState(true);
@@ -29,15 +30,18 @@ function Nav() {
         <img
           onClick={() => history.push("/")}
           className="nav__logo"
-          src = {logo}
+          src={logo}
         />
 
         <img
-          onClick={() => 
-            history.push("/profile")
-          }
+          onClick={() => history.push("/profile")}
           className="nav__avatar"
           src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
+        />
+        <img
+          onClick={() => history.push("/chat")}
+          className="chatLogo"
+          src={chatLogo}
         />
       </div>
     </div>

@@ -13,6 +13,6 @@ const firebaseApp = firebase.initializeApp(firebaseConfig); //initializing our a
 const db = firebaseApp.firestore(); // firestore is the real time database that we are gonna use for our app
 const auth = firebase.auth();
 
+
 export { auth };
 export default db;
- 

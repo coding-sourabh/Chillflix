@@ -7,13 +7,15 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import ProfileScreen from "./screens/ProfileScreen";
-import Footer from './Footer';
+import Footer from "./Footer";
+import Chat from "./screens/Chat.js";
+
 
 function App() {
+
+
   const user = useSelector(selectUser); // selector for getting back the state user from firestore
   const dispatch = useDispatch(); // action like login,logout will be performed with the help of dispatch
-
-  if (!user) console.log("no user");
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -45,13 +47,16 @@ function App() {
             <Route path="/profile">
               <ProfileScreen />
             </Route>
+            <Route path="/chat">
+              <Chat />
+            </Route>
             <Route exact path="/">
               <HomeScreen />
             </Route>
           </Switch>
         )}
       </Router>
-      <Footer/>
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -36,3 +36,20 @@
   width: 70px;
   top: 0;
 }
+
+.chatLogo {
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  right: 120px;
+  width: 70px;
+  top: 0;
+  transition: all 0.5y ease;
+}
+
+.chatLogo:hover {
+  transform: scale(2);
+  box-shadow: 1px 1px #eeb690, 2px 2px #eeb690, 3px 3px #eeb690;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
